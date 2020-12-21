@@ -32,7 +32,7 @@ class BookList extends Component {
         console.log(this.props);
         return (
             <div>
-            <ul ids="book-list">
+            <ul className="book-list">
             {this.bookDisplay()}
             </ul>
             <BookDetails bookId={this.state.selected}>

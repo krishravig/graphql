@@ -10,9 +10,9 @@ class BookDetails extends Component {
         const {book} = this.props.data;
         if ( book) {
             return (
-                <div>
-                <h2>{book.name}</h2>
-                <h2>{book.author.name}</h2>
+                <div id="book-details">
+                <h4>{book.name}</h4>
+                <h4>{book.author.name}</h4>
                 <p> All books by this author:</p>
                 <ul className="other-books">
                     { book.author.books.map(item => {

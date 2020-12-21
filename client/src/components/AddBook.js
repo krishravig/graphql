@@ -42,6 +42,7 @@ class AddBook extends Component {
     render() {
         return (
             <form id="add-book" onSubmit={ this.submitForm.bind(this) } >
+                <p> Add Book:</p>
                 <div className="field">
                     <label>Book name:</label>
                     <input type="text" onChange={ (e) => this.setState({ name: e.target.value }) } />
