@@ -13,7 +13,7 @@ class BookDetails extends Component {
                 <div id="book-details">
                 <h4>{book.name}</h4>
                 <h4>{book.author.name}</h4>
-                <p> All books by this author:</p>
+                <p> All books by this author:{book.author.name}</p>
                 <ul className="other-books">
                     { book.author.books.map(item => {
                         return <li key={item.id}>{ item.name }</li>
